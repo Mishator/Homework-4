@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
 
 }
 public static void task1 () {
@@ -95,5 +96,17 @@ public static void task6 () {
         double totalKg = totalGram / 1000;
         System.out.println("Вес спортзавтрака " + totalGram + " граммов.");
                 System.out.println("Вес спортзавтрака " + totalKg + " кг.");
+}
+public static void task7 () {
+        System.out.println("Задача 7");
+        short loseWeight = 7000;
+        short rationOne = 250;
+        short rationTwo = 500;
+        double totalRationone = loseWeight / rationOne;
+        double totalRationtwo = loseWeight / rationTwo;
+        double avaregValue = (totalRationone + totalRationtwo) / 2;
+        System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то он достигнет цели через " + totalRationone + " дней.");
+        System.out.println("Если спортсмен будет терять каждый день по 500 грамм, то он достигнет цели через " + totalRationtwo + " дней.");
+        System.out.println("Средние количество " + avaregValue + " дней, до достижения поставленной цели.");
 }
 }
