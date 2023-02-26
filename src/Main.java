@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
 
 }
 public static void task1 () {
@@ -108,5 +109,27 @@ public static void task7 () {
         System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то он достигнет цели через " + totalRationone + " дней.");
         System.out.println("Если спортсмен будет терять каждый день по 500 грамм, то он достигнет цели через " + totalRationtwo + " дней.");
         System.out.println("Средние количество " + avaregValue + " дней, до достижения поставленной цели.");
+}
+public static void task8 () {
+        System.out.println("Задача 8");
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        double increaseSalarymasha = (salaryMasha * 0.1) + salaryMasha;
+        double increaseSalarydenis = (salaryDenis * 0.1) + salaryDenis;
+        double increaseSalarykristina = (salaryKristina * 0.1) + salaryKristina;
+        int oldSalarymasha = salaryMasha * 12;
+        int oldSalarydenis = salaryDenis * 12;
+        int oldSalarykristina = salaryKristina * 12;
+        double newSalarymasha = increaseSalarymasha * 12;
+        double newSalarydenis = increaseSalarydenis * 12;
+        double newSalarykristina = increaseSalarykristina * 12;
+        double differenceSalarymasha = newSalarymasha - oldSalarymasha;
+        double differenceSalarydenis = newSalarydenis - oldSalarydenis;
+        double differenceSalarykristina = newSalarykristina - oldSalarykristina;
+                System.out.println("Маша теперь получает в месяц " + increaseSalarymasha + " рублей. Годовой доход вырос на " + differenceSalarymasha + " рублей.");
+                System.out.println("Денис теперь получает в месяц " + increaseSalarydenis + " рублей. Годовой доход вырос на " + differenceSalarydenis + " рублей.");
+                System.out.println("Кристина теперь получает в месяц " + increaseSalarykristina + " рублей. Годовой доход вырос на " + differenceSalarykristina + " рублей.");
+
 }
 }
